@@ -1,13 +1,14 @@
-import { Global } from "@emotion/react";
-import Router from "./Router";
-import { reset } from "./style/Global/reset";
+import { Global, ThemeProvider } from "@emotion/react";
+import { day, night } from './themes/theme';
+import Router from "./modules/Router";
+import { globalStyle } from "./styles/Global/globalStyle";
 
 function App() {
   return (
-    <>
-      <Global styles={reset} />
+    <ThemeProvider theme={day || night}>
+      <Global styles={globalStyle} />
       <Router />
-    </>
+    </ThemeProvider>
   );
 }
 

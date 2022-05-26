@@ -8,7 +8,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    {/*테마 설정하기 (이모션으로)*/}
     <App />
   </React.StrictMode>
 );
