@@ -15,7 +15,6 @@ export const RotatePanelBox = styled('div')`
   align-items: center;
   perspective: 1300px;
   position: fixed;
-
 `
 const ALERT = keyframes`
   0% {

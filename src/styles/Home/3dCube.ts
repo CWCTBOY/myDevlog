@@ -10,8 +10,8 @@ const CUBE = keyframes`
   }
 `
 export const CubeBox = styled('div') <{ deg: number }>`
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   position: relative;
   transform-style: preserve-3d;
   transition: all 1s linear;
@@ -23,7 +23,11 @@ export const CubePlane = styled('div')`
   background-color: inherit;
   position: absolute;
   backface-visibility: hidden;
-  box-shadow: inset 0 0 10px 10px #26F603;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: inset 0 0 10px 10px #08D2F7;
   &:first-of-type {
     transform: rotateX(90deg) translateZ(50px);
   }

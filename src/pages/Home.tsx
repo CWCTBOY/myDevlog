@@ -10,7 +10,7 @@ export default function Home() {
     window.addEventListener('scroll', (e: Event) => {
       setDeg(window.scrollY * perDeg);
     });
-  })
+  }, [])
   return (
     <Container>
       <RotatePanelBox>

@@ -6,7 +6,7 @@ export const AxisPlane = styled('div') <{ deg: number }>`
   position: relative;
   transform-style: preserve-3d;
   margin: 180px;
-  transform: rotateY(${props => `-${props.deg}deg`}) rotateX(${props => `${props.deg / 30}deg`});
+  transform: rotateY(${props => `-${props.deg}deg`}) ;
 `
 export const Plane = styled('div')`
   display: flex;
@@ -21,7 +21,7 @@ export const Plane = styled('div')`
   box-shadow: inset 0 0 3px 3px #08D2F7;
   border: 1px solid #08D2F7;
   border-radius: 10px;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   &:first-of-type {
     transform: rotateY(0deg) translateZ(370px);
   }
