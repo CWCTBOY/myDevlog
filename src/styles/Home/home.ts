@@ -9,12 +9,34 @@ export const RotatePanelBox = styled('div')`
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,.9);
+  position: fixed;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+`
+export const Header = styled('div')`
+  width: 100%;
+  height: 35vh;
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
   perspective: 1300px;
-  position: fixed;
+`
+export const ArtWork = styled('div')`
+  width: 100%;
+  height: 45vh;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  perspective: 1300px;
+`
+export const AlertBox = styled('div')`
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 const ALERT = keyframes`
   0% {

@@ -21,7 +21,6 @@ export const Plane = styled('div')`
   box-shadow: inset 0 0 3px 3px #08D2F7;
   border: 1px solid #08D2F7;
   border-radius: 10px;
-  /* backface-visibility: hidden; */
   &:first-of-type {
     transform: rotateY(0deg) translateZ(370px);
   }
