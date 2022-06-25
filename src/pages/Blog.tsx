@@ -1,9 +1,10 @@
-import BlogHeader from "../components/Blog/Header";
+import BlogHeader from "../components/blog/header";
+import { BlogContainer } from "../styles/blog/blogContainer";
 
 export default function Blog() {
   return (
-    <>
+    <BlogContainer>
       <BlogHeader></BlogHeader>
-    </>
-  )
+    </BlogContainer>
+  );
 }

@@ -1,7 +1,5 @@
-import { Header } from "../../styles/Global/header"
+import { Header } from "../../styles/blog/header";
 
 export default function BlogHeader() {
-  return (
-    <Header></Header>
-  )
+  return <Header></Header>;
 }

@@ -1,11 +1,11 @@
 import { Global, ThemeProvider } from "@emotion/react";
-import { day, night } from './themes/theme';
+import { day } from "./themes/theme";
 import Router from "./modules/Router";
-import { globalStyle } from "./styles/Global/globalStyle";
+import { globalStyle } from "./styles/global/reset";
 
 function App() {
   return (
-    <ThemeProvider theme={day || night}>
+    <ThemeProvider theme={day}>
       <Global styles={globalStyle} />
       <Router />
     </ThemeProvider>
